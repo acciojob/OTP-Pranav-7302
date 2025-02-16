@@ -1,4 +1,3 @@
-//your JS code here. If required.
 let div = document.body.querySelector('.output')
 div.style.textAlign  = 'center'
 let head = document.createElement('h1')
@@ -10,6 +9,15 @@ let p = document.createElement('p')
 p.innerText = 'We emailed you the six digit code to acciojob@email.com Enter the code below to confirm your email adaress'
 p.id = 'verification_subtext'
 div.append(p)
+
+window.onload = () => {
+  let inputs = document.querySelectorAll(".code");
+  if (inputs.length > 0) {
+      inputs[0].focus();
+  }
+};
+
+
 
 let cont = document.querySelector('.code-container')
 cont.style.textAlign = 'center'
